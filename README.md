@@ -11,7 +11,8 @@
 **<데이터베이스 H2-console사용>**
 
 **build.gradle추가**<br>
-<img width="915" alt="스크린샷 2024-07-03 오후 11 41 53" src="https://github.com/jaebinn/JPA/assets/108271458/1c2aa1e4-8a30-4eca-9c26-0a2e7230c14d">
+<img width="249" alt="스크린샷 2024-07-04 오후 6 09 48" src="https://github.com/jaebinn/JPA/assets/108271458/3cd6f768-15ef-464f-860d-0f763a9adc79">
+
 
 **application.properties추가**<br>
 <img width="394" alt="스크린샷 2024-07-04 오후 6 03 24" src="https://github.com/jaebinn/JPA/assets/108271458/e7a5e27a-6018-4107-9533-54ceab9cb10f">
