@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @Entity
@@ -42,5 +43,6 @@ public class Question {
     @ManyToOne
     private SiteUser author;
 
-
+    @ManyToMany
+    Set<SiteUser> voter;
 }

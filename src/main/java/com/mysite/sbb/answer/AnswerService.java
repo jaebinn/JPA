@@ -42,4 +42,9 @@ public class AnswerService {
     public void answerDelete(Answer answer){
         this.answerRepository.delete(answer);
     }
+
+    public void vote(Answer answer, SiteUser siteUser){
+        answer.getVoter().add(siteUser);
+        this.answerRepository.save(answer);
+    }
 }
