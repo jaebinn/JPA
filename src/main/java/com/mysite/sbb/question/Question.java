@@ -30,6 +30,8 @@ public class Question {
 
     private LocalDateTime createDate;
 
+    private LocalDateTime modifyDate;
+
     //CascadeType.REMOVE -> question이 삭제되면 answer도 의미가 없기 때문에
     //모두 함께 삭제하기위해
     //mappedBy는 참조 엔티티의 속성명
@@ -39,4 +41,6 @@ public class Question {
     //여러개 질문이 한 명의 사용자에게 작성될 수 있으므로
     @ManyToOne
     private SiteUser author;
+
+
 }

@@ -21,6 +21,8 @@ public class Answer {
 
     private LocalDateTime createDate;
 
+    private LocalDateTime modifyDate;
+
     //N:1(답변은 하나의 질문에 여러개가 달릴 수 있는 구조)
     //Foreign Key 관계
     @ManyToOne
@@ -28,5 +30,7 @@ public class Answer {
 
     @ManyToOne
     private SiteUser author;
+
+
 
 }
