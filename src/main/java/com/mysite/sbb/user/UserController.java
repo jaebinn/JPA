@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping("/user/*")
+@RequestMapping("/user/")
 public class UserController {
 
     private final UserService userService;
@@ -22,6 +22,7 @@ public class UserController {
     public String signup(UserCreateForm userCreateForm){
         return "signupForm";
     }
+
 
     @PostMapping("/signup")
     public String signup(@Valid UserCreateForm userCreateForm, BindingResult bindingResult) {
@@ -50,5 +51,10 @@ public class UserController {
         }
 
         return "redirect:/";
+    }
+
+    @GetMapping("login")
+    public String login(){
+        return "loginForm";
     }
 }
